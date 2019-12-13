@@ -5,7 +5,7 @@ class Anagram
   end
 
   def evaluator(word1, word2)
-    if (@word1[/[aeiou]/]) || (@word2[/[aeiou]/]) 
+    if (@word1[/[(aeiou)]/]) && (@word2[/[(aeiou)]/])
       puts "Your word has at least one vowel--woohoo!"
       true
     else
