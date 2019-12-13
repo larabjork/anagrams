@@ -5,11 +5,11 @@ class Anagram
   end
 
   def evaluator(word1, word2)
-    lowercase1 = word1.downcase
-    lowercase2 = word2.downcase
+    lowercase1 = word1.downcase.gsub(/\W/, "")
+    lowercase2 = word2.downcase.gsub(/\W/, "")
 
-    tester1 = lowercase1.split(//).sort.join.to_s.gsub(" ", "")
-    tester2 = lowercase2.split(//).sort.join.to_s.gsub(" ", "")
+    tester1 = lowercase1.split(//).sort.join.to_s
+    tester2 = lowercase2.split(//).sort.join.to_s
     if (tester1.length == 1) || (tester2.length == 1)
       puts "Your word is too short"
       "too short"

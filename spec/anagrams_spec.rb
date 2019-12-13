@@ -38,6 +38,6 @@ describe('#evaluator') do
     end
     it('should be able to determine if the two inputs from the user have no characters in common') do
     check9 = Anagram.new("hi there", "boy o boy")
-    expect(check9.evaluator("hi there", "boy o boy")).to(eq("yes antigram"))
+    expect(check9.evaluator("hi there!", "boy o boy")).to(eq("yes antigram"))
     end
 end
