@@ -21,6 +21,39 @@ _Two words are anagrams if they contain the exact same letters in a different or
 
 ### Specifications
 These specs were developed based on the assignment description.
+**1. Behavior:** The program will be able to identify if a word has a vowel in it (and therefore is an actual word).
+**Input:** sdfd
+**Output:** "Hang on, I don't think you entered an actual word"
+
+**2. Behavior:** The program will be able to see that a single-letter word is not an anagram, because the order can't be changed.
+**Input:** a
+**Output:** "Sorry, you need to enter a word with at least two letters"
+
+**3. Behavior:** The program will be able to check whether the two words entered by the user have a different number of letters; if so, they are not anagrams.
+**Input:** two, four
+**Output:** "Sorry, these are not anagrams"
+
+**4. Behavior:** The program will be able to check whether the two words entered by the user have exactly the same letters, regardless of what order they are in; if so, they are anagrams.
+**Input:** tea, eat
+**Output:** "Congrats! You've got anagrams!"
+
+**5. Behavior:** The program will be able to check whether the two words entered by the user have exactly the same letters, regardless of what order they are in and regardless of capitalization; if so, they are anagrams.
+**Input:** tea, Eat
+**Output:** "Congrats! You've got anagrams!"
+
+**6. Behavior:** The program will be able to check whether the two words entered by the user have no letters in common, regardless of what order they are in and regardless of capitalization; if so, they are antigrams.
+**Input:** dog, Cat
+**Output:** "Congrats! You found two antigrams!"
+
+**7. Behavior:** The program will be able to check whether two phrases (of at least two words) entered by the user are anagrams, antigrams, or neither.
+**Input:** "Lair nana, Rail naan", "hi there, boy o boy", "dogs and cats, hippos and zebras"
+**Output:** "Congrats! You've got anagrams!", "Congrats! You found two antigrams!",
+"Sorry, your phrases aren't anagrams or antigrams. But they are still very nice."
+
+
+
+
+
 
 
 
