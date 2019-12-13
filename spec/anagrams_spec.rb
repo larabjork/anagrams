@@ -33,7 +33,11 @@ describe('#evaluator') do
     expect(check7.evaluator('lair nana', 'rail naan')).to(eq("yes anagram"))
     end
     it('should be able to compare one phase with another to determine if they are anagrams of each other') do
-    check7 = Anagram.new('dogs and cats', 'catsan dogsd')
-    expect(check7.evaluator('dogs and cats', 'catsan dogsd')).to(eq("yes anagram"))
+    check8 = Anagram.new('dogs and cats', 'catsan dogsd')
+    expect(check8.evaluator('dogs and cats', 'catsan dogsd')).to(eq("yes anagram"))
+    end
+    it('should be able to determine if the two inputs from the user have no characters in common') do
+    check9 = Anagram.new("hi there", "boy o boy")
+    expect(check9.evaluator("hi there", "boy o boy")).to(eq("yes antigram"))
     end
 end
