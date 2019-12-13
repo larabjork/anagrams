@@ -21,8 +21,8 @@ _Two words are anagrams if they contain the exact same letters in a different or
 
 ### Specifications
 These specs were developed based on the assignment description.
-**1. Behavior:** The program will be able to identify if a word has a vowel in it (and therefore is an actual word).
-**Input:** sdfd
+**1. Behavior:** The program will be able to identify if one or both of the user's entries has no vowels in it (and therefore is an actual word).
+**Input:** sdfd, dogs
 **Output:** "Hang on, I don't think you entered an actual word"
 
 **2. Behavior:** The program will be able to see that a single-letter word is not an anagram, because the order can't be changed.
