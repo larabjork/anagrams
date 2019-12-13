@@ -23,4 +23,8 @@ describe('#evaluator') do
     check5 = Anagram.new('dag', 'gian')
     expect(check5.evaluator('dag', 'gian')).to(eq("not anagram"))
     end
+    it("should be able to determine whether two words are anagrams") do
+    check6 = Anagram.new('train', 'intra')
+    expect(check6.evaluator('train', 'intra')).to(eq("yes anagram"))
+    end
 end
