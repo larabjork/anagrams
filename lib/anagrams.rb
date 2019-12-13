@@ -20,9 +20,14 @@ class Anagram
       puts "Woohoo! You've got anagrams!"
       "yes anagram"
     elsif tester1 != tester2
-      puts "You don't have an anagram"
-      "not anagram"
-
+      anti_check1 = tester1.split(//)
+      anti_check2 = tester2.split(//)
+      if anti_check1 - anti_check2 == anti_check1
+        puts "You found some anti-grams!"
+        "yes antigram"
+      else
+        "neither"
+      end
     end
   end
 

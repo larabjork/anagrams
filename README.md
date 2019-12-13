@@ -22,7 +22,7 @@ _Two words are anagrams if they contain the exact same letters in a different or
 ### Specifications
 These specs were developed based on the assignment description.
 **1. Behavior:** The program will be able to identify if one or both of the user's entries has no vowels in it (and therefore is an actual word).
-**Input:** sdfd, dogs
+**Input:** sdfd, dogsd
 **Output:** "Hang on, I don't think you entered an actual word"
 
 **2. Behavior:** The program will be able to see that a single-letter word is not an anagram, because the order can't be changed.
@@ -49,9 +49,6 @@ These specs were developed based on the assignment description.
 **Input:** "Lair nana, Rail naan", "hi there, boy o boy", "dogs and cats, hippos and zebras"
 **Output:** "Congrats! You've got anagrams!", "Congrats! You found two antigrams!",
 "Sorry, your phrases aren't anagrams or antigrams. But they are still very nice."
-
-
-
 
 
 

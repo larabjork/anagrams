@@ -14,7 +14,7 @@ describe('#evaluator') do
     end
     it("should be able to determine that two words that don't have the same number of letters can't be anagrams") do
     check3 = Anagram.new('dag', 'gian')
-    expect(check3.evaluator('dag', 'gian')).to(eq("not anagram"))
+    expect(check3.evaluator('dag', 'gian')).to(eq("neither"))
     end
     it("should be able to determine whether two words are anagrams") do
     check4 = Anagram.new('train', 'intra')
@@ -26,7 +26,7 @@ describe('#evaluator') do
     end
     it("should be able to determine whether two words are not anagrams") do
     check6 = Anagram.new('traim', 'intra')
-    expect(check6.evaluator('traim', 'intra')).to(eq("not anagram"))
+    expect(check6.evaluator('traim', 'intra')).to(eq("neither"))
     end
     it('should be able to compare one phase with another to determine if they are anagrams of each other') do
     check7 = Anagram.new('lair nana', 'railnaan')
