@@ -20,7 +20,7 @@ describe('#evaluator') do
     expect(check4.evaluator('ag', 'an')).to(eq("yes word"))
     end
     it("should be able to determine that two words that don't have the same number of letters can't be anagrams") do
-    check5 = Anagram.new('dag', 'an')
-    expect(check5.evaluator('dag', 'an')).to(eq("not anagram"))
+    check5 = Anagram.new('dag', 'gian')
+    expect(check5.evaluator('dag', 'gian')).to(eq("not anagram"))
     end
 end

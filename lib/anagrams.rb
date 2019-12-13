@@ -11,6 +11,9 @@ class Anagram
     elsif (@word1.length == 1) || (@word2.length == 1)
       puts "Your word is too short"
       "too short"
+    elsif @word1.length != @word2.length
+      puts "Your words are different lengths, so they can't be anagrams of each other"
+      "not anagram"
     elsif (@word1[/[(^aeiou)]/]) || (@word2[/[(^aeiou)]/])
       puts "Hang on, I think you need to buy a vowel or two."
       "no vowel"
