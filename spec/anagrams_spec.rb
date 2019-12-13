@@ -28,5 +28,8 @@ describe('#evaluator') do
     check6 = Anagram.new('traim', 'intra')
     expect(check6.evaluator('traim', 'intra')).to(eq("not anagram"))
     end
-
+    it('should be able to compare one phase with another to determine if they are anagrams of each other') do
+    check7 = Anagram.new('lair nana', 'rail naan')
+    expect(check7.evaluator('lair nana', 'rail naan')).to(eq("yes anagram"))
+    end
 end

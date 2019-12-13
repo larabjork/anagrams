@@ -5,7 +5,7 @@ class Anagram
   end
 
   def evaluator(word1, word2)
-    lowercase1 = word1.downcase
+    lowercase1 = word1.downcase.gsub(' ', '')
     lowercase2 = word2.downcase
 
     tester1 = lowercase1.split(//).sort.join.to_s
