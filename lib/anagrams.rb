@@ -10,18 +10,15 @@ class Anagram
     if (tester1.length == 1) || (tester2.length == 1)
       puts "Your word is too short"
       "too short"
-    elsif (tester1[/[aeiou]/]) && (tester2[/[aeiou]/]) && (tester1 == tester2)
-      puts "Woohoo! You've got anagrams!"
-      "yes anagram"
-    elsif (tester1[/([^aeiou])/])
+    elsif (tester1[/^[^aeyiuo]+$/]) || (tester2[/^[^aeyiuo]+$/])
       puts "Hang on, I think you need to buy a vowel or two."
-      "no vowel"
-    elsif (tester2[/([^aeiou])/])
-      puts "Hang on, I think you need to buy a vowel or two."
-      "no vowel"
+      "no vowel" 
     elsif tester1 != tester2
       puts "You don't have an anagram"
       "not anagram"
+    elsif (tester1[/[aeiou]/]) && (tester2[/[aeiou]/]) && (tester1 == tester2)
+      puts "Woohoo! You've got anagrams!"
+      "yes anagram"
 
     end
   end
