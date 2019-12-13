@@ -9,8 +9,9 @@ class Anagram
       puts "Your word has at least one vowel--woohoo!"
       true
     else
-      puts "Hang on, I don't think you entered an actual word."
+      puts "Hang on, I think you need to buy a vowel or two."
       false
     end
   end
+
 end
