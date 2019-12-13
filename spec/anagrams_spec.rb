@@ -16,7 +16,11 @@ describe('#evaluator') do
     expect(check3.evaluator('a', 'a')).to(eq("too short"))
     end
     it("should be able to evaluate words of two or more letters") do
-    check3 = Anagram.new('ag', 'an')
-    expect(check3.evaluator('ag', 'an')).to(eq("yes word"))
+    check4 = Anagram.new('ag', 'an')
+    expect(check4.evaluator('ag', 'an')).to(eq("yes word"))
+    end
+    it("should be able to determine that two words that don't have the same number of letters can't be anagrams") do
+    check5 = Anagram.new('dag', 'an')
+    expect(check5.evaluator('dag', 'an')).to(eq("not anagram"))
     end
 end

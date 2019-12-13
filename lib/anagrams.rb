@@ -5,7 +5,7 @@ class Anagram
   end
 
   def evaluator(word1, word2)
-    if (@word1[/[(aeiou)]/] && @word1.length > 1) && (@word2[/[(aeiou)]/] && @word2.length > 1)
+    if (@word1[/[(aeiou)]/] && @word1.length > 1) && (@word2[/[(aeiou)]/] && @word2.length > 1) && (@word1.length == @word2.length)
       puts "You've got a word!"
       return "yes word"
     elsif (@word1.length == 1) || (@word2.length == 1)
@@ -13,7 +13,7 @@ class Anagram
       "too short"
     elsif (@word1[/[(^aeiou)]/]) || (@word2[/[(^aeiou)]/])
       puts "Hang on, I think you need to buy a vowel or two."
-      return "no vowel"
+      "no vowel"
     end
   end
 
