@@ -1,7 +1,6 @@
 class Anagram
-  def initialize(word1, word2)
-    @word1 = word1
-    @word2 = word2
+  def initialize(run)
+    @run = run
   end
 
   def evaluator(word1, word2)
