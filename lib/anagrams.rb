@@ -22,7 +22,7 @@ class Anagram
       "too short"
     elsif (tester1[/^[^aeiouy]+$/]) || (tester2[/^[^aeiouy]+$/])
       "no vowel"
-    elsif (tester1[/[aeiou]/]) && (tester2[/[aeiou]/]) && (tester1 == tester2)
+    elsif (tester1[/[aeiouy]/]) && (tester2[/[aeiouy]/]) && (tester1 == tester2)
       "yes anagram"
     elsif tester1 != tester2
       anti_check1 = tester1.split(//)
