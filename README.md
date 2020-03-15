@@ -68,7 +68,8 @@ Project was written using Google Chrome; no other browsers were tested for compa
 2. Clone the project locally from github.
 3. Install Bundler if you do not already have it by running **gem install bundler** in the terminal.
 4. Run **bundle install** to manage gems; if you make additional changes to the Gemfile, you will need to run this command again.
-5. If something doesn't display correctly or goes wrong somehow, please contact me at <lara.m.bjork@gmail.com> and I will do my best to troubleshoot for you.
+5. Enter **ruby scripts.rb** to start the program.
+6. If something doesn't display correctly or goes wrong somehow, please contact me at <lara.m.bjork@gmail.com> and I will do my best to troubleshoot for you.
 
 
 
