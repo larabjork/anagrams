@@ -50,28 +50,19 @@ These specs were developed based on the assignment description.
 **Output:** "Congrats! You've got anagrams!", "Congrats! You found two antigrams!",
 "Sorry, your phrases aren't anagrams or antigrams. But they are still very nice."
 
-
-
-
-
-
-
-
 ### Technologies Used
 Ruby 2.5.1, rspec, pry, Bundler
-
 
 Project was written using Google Chrome; no other browsers were tested for compatibility.
 
 ### Project Setup instructions
-1. Ensure that you have the correct version of Ruby installed
+1. Ensure that you have the correct version of Ruby installed.
 2. Clone the project locally from github.
 3. Install Bundler if you do not already have it by running **gem install bundler** in the terminal.
 4. Run **bundle install** to manage gems; if you make additional changes to the Gemfile, you will need to run this command again.
-5. Enter **ruby scripts.rb** to start the program.
+5. Enter **ruby scripts.rb** to start the app in the terminal. You will need to do this each time you want to enter a pair of words.
+6. To run the app's tests, enter **rspec -fd** in the terminal. Adding **-fd** will allow you to see a brief description of what each test is looking for. The tests will still run if you enter only **rspec**.
 6. If something doesn't display correctly or goes wrong somehow, please contact me at <lara.m.bjork@gmail.com> and I will do my best to troubleshoot for you.
-
-
 
 ### Known Issues and Limitations
 * No known bugs
